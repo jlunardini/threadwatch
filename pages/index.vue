@@ -1,9 +1,36 @@
 <template>
-  <div>test</div>
+  <div class="w-full h-full flex justify-center items-center flex-col">
+    <div class="make-sansita text-6xl text-yellow-600 w-full text-center">
+      Welcome to DenimTracker
+    </div>
+    <div class="flex justify-center space-x-4 mt-8 w-full">
+      <p
+        class="border-2 p-4 rounded-full text-lg font-semibold hover:border-yellow-600 hover:bg-gray-100"
+      >
+        Login
+      </p>
+      <p
+        @click="showAbout = 'true'"
+        class="border-2 p-4 rounded-full text-lg font-semibold hover:border-yellow-600 hover:bg-gray-100"
+      >
+        About
+      </p>
+    </div>
+    <template v-if="showAbout">
+      <About></About>
+    </template>
+  </div>
 </template>
 
 <script>
-export default {};
+import About from "../components/About";
+export default {
+  data() {
+    return {
+      showAbout: false,
+    };
+  },
+};
 </script>
 
 <style>

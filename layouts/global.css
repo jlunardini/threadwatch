@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Train One";
+  src: local("Train_One"),
+    url(~assets/fonts/Train_One/TrainOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sansita Swashed";
+  src: local("Sansita_Swashed"),
+    url(~assets/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf)
+      format("truetype");
+}
+
+.make-train {
+  font-family: "Train One", sans-serif;
+}
+
+.make-sansita {
+  font-family: "Sansita Swashed", sans-serif;
+}
